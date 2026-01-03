@@ -1,0 +1,105 @@
+:root {
+    --border-color: rgb(102, 185, 207);
+}
+
+.main-back {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    background-image: url("project://database/Assets/Backgrounds/SAMainBack.jpg?fileID=2800000&guid=3b5fc53e40a9831488298f084bc95689&type=3#SAMainBack");
+    background-repeat: no-repeat no-repeat;
+    -unity-background-scale-mode: scale-and-crop;
+    visibility: visible;
+    overflow: visible;
+}
+
+.menu {
+    flex-grow: 1;
+    position: absolute;
+    top: 48px;
+    right: 36px;
+    flex-shrink: 1;
+    flex-direction: column;
+    align-items: auto;
+    margin-top: 0;
+    margin-right: 0;
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-top-color: var(--border-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-left-color: var(--border-color);
+    border-bottom-color: var(--border-color);
+    border-right-color: var(--border-color);
+    width: 35%;
+    height: 20%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 8%;
+    padding-left: 8%;
+    -unity-slice-type: sliced;
+    justify-content: space-evenly;
+    --button-fontsize: 24px;
+}
+
+.h1-label {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 40%;
+    color: rgb(255, 207, 42);
+    font-size: 35px;
+    -unity-font-style: bold-and-italic;
+    -unity-text-align: upper-center;
+    -unity-font-definition: url("project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#LegacyRuntime");
+    -unity-text-generator: standard;
+    letter-spacing: 5px;
+    word-spacing: 13px;
+    -unity-text-align: middle-center;
+    -unity-text-outline-width: 0;
+    text-shadow: 20px 20px 20px rgb(226, 128, 76);
+}
+
+.button {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    height: auto;
+    flex-direction: column;
+    background-color: rgba(43, 94, 101, 0.68);
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    letter-spacing: 3px;
+    -unity-font-style: bold;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    font-size: var(--button-fontsize);
+}
+
+.menu-button {
+    transition-property: scale, color;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease-in-out;
+}
+
+.menu-button:hover {
+    scale: 1.1 1.1;
+}
+
+.menu-button:active {
+    scale: 1.2 1.2;
+    background-color: rgba(103, 193, 197, 0.76);
+}

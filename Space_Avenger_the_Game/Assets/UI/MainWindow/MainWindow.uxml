@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainWindow/MainWindow.uss?fileID=7433441132597879392&amp;guid=170f3a723104f4d468ca3015940f68b1&amp;type=3#MainWindow"/>
+    <ui:Image scale-mode="ScaleAndCrop" source="" name="MainBack" class="main-back">
+        <ui:VisualElement enabled="true" focusable="true" name="Menu" class="menu" style="-unity-background-scale-mode: scale-to-fit; justify-content: space-around; background-color: rgba(52, 76, 115, 0.46);">
+            <ui:Button text="New Game" name="NewGame_Button" class="button menu-button"/>
+            <ui:Button text="Exit" name="Exit_Button" class="button menu-button"/>
+        </ui:VisualElement>
+        <ui:Label text="Space Avenger" name="" class="h1-label"/>
+    </ui:Image>
+</ui:UXML>
